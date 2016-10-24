@@ -1,4 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class="jumbotron">
+  <center>
+    <h1><%= @pizza.name %></h1>
+    <img src="<%= @pizza.image %>">
+  </center>
+  <h3>Crust: <%= @pizza.crust %></h3>
+  <h3>Sauce: <%= @pizza.sauce %></h3>
+  <h3>Toppings: <%= @pizza.toppings %></h3>
+  <h3>Cost: <%= @pizza.cost %></h3>
+</div>
+
+<!-- <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
@@ -32,3 +43,4 @@
 
 <%= link_to 'Edit', edit_pizza_path(@pizza) %> |
 <%= link_to 'Back', pizzas_path %>
+-->
